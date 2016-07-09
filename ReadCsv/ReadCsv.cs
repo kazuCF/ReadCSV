@@ -11,7 +11,7 @@ namespace ReadCsv
         public static StreamReader reader;
         public static IEnumerable<string> strs;
         public static List<GeoData> geos = new List<GeoData>();
-        public static void ReadOne(string filename,bool iscolumn=true)//一つの地点
+        public static void ReadGeo(string filename,bool iscolumn=true)//一つの地点
         {
             string[] columns=new string[1];
             List<string[]> datas=new List<string[]>();

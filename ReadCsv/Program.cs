@@ -10,7 +10,7 @@ namespace ReadCsv
     {
         static void Main(string[] args)
         {
-            Readcsv.ReadOne("gps.csv",false);
+            Readcsv.ReadGeo("gps.csv",false);
             Readcsv.geos[0].Write();
         }
     }

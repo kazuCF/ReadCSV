@@ -52,5 +52,19 @@ namespace ReadCsv
             }
             writer.Close();
         }
+        public void ReadRoad(string filename)
+        {
+            StreamReader reader = new StreamReader(filename);
+            while (!reader.EndOfStream)
+            {
+                string str = reader.ReadLine();
+                for (int i = 0; i < str.Length; i++)
+                {
+                    if (str[i] == '●') { isroad[ycount, i]++; }
+                }
+                xcount = str.Length; ycount++;
+            }
+        }
+
     }
 }
